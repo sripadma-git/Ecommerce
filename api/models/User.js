@@ -14,10 +14,12 @@ const userSchema = new mongoose.Schema(
 );
 
 //validate password match or not
-userSchema.methods.matchPassword = async function (enterPassword) {
-  return await bcrypt.compare(enterPassword, this.password);
+// userSchema.methods.matchPassword = async function (enterPassword) {
+//   return await bcrypt.compare(enterPassword, this.password);
+// };
+userSchema.methods.matchPassword = async function (enteredPassword) {
+  return await bcrypt.compare(enteredPassword, this.password);
 };
-
 //register passwrod hash and store
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) {

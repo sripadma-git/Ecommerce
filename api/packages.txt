@@ -1,1 +1,6 @@
+//package.json
+npm init -y
+//  To install dependencies:
 npm install bcryptjs dotenv express express-async-handler jsonwebtoken mongoose morgan concurrently nodemon
+
+
