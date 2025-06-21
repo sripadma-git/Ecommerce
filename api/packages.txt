@@ -4,3 +4,14 @@ npm init -y
 npm install bcryptjs dotenv express express-async-handler jsonwebtoken mongoose morgan concurrently nodemon
 
 
+1. setup node.js with express and dotenv
+node.js connect with MongoseDB
+ create mongose Database models
+
+2. seed Data into MongoseDB
+setup Express error handler (express-async-handler)
+create order models
+setup User Routes and Login function api 
+
+3. Setup User Register Api with Encrypted Password.
+Get User Profile Detail Appi with jwt token and setup Auth Middleware.
